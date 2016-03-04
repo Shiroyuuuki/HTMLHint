@@ -68,4 +68,16 @@ describe('Rules: '+ruldId, function(){
         var messages = HTMLHint.verify(code, ruleOptions);
         expect(messages.length).to.be(0);
     });
+
+    it('Should pass when attribute contains line breaks', function(){
+        var code = `
+                <form name="hsCodeAddComponent"
+                    class="form
+                        form2
+                        form3
+                    ">
+            `;
+        var messages = HTMLHint.verify(code, ruleOptions);
+        expect(messages.length).to.be(0);
+    });
 });

@@ -12,21 +12,22 @@ HTMLHint.addRule({
             var html = event.html;
 
             var rawSpaces = html
-                .replace(/\s{2,}/g, ' ')
-                .replace(' />', '/>')
-                .replace('< ', '<')
-                .trim()
-                .match(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g);
+              .replace(/\s{2,}/g, ' ')
+              .replace(' />', '/>')
+              .replace('< ', '<')
+              .trim()
+              .match(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g);
 
             var spaceCount = rawSpaces && rawSpaces.length || 0;
 
             var attrBreaks = html
-                .split('\n')
-                .length - 1;
+              .match(/\n+(?=([^"]*"[^"]*")*[^"]*$)/g);
 
-            if (spaceCount >= 1 && spaceCount !== attrBreaks + 1) {
-                reporter.error('First attribute should be inline with parent tag',
-                    event.line, event.col, self, event.raw);
+            var breakCount = attrBreaks && attrBreaks.length || 0;
+
+            if (spaceCount > 1 && spaceCount !== breakCount + 1) {
+                reporter.error('Only one inline attributes allowed',
+                  event.line, event.col, self, event.raw);
             }
 
         });
