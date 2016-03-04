@@ -16,8 +16,8 @@ HTMLHint.addRule({
                 .replace(' />', '/>')
                 .replace('< ', '<')
                 .trim()
-                .split(' ')
-                .length - 1;
+                .match(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g)
+                .length;
 
             var attrBreaks = html
                 .split('\n')

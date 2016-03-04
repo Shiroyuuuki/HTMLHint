@@ -52,4 +52,12 @@ describe('Rules: '+ruldId, function(){
         var messages = HTMLHint.verify(code, ruleOptions);
         expect(messages.length).to.be(0);
     });
+
+    it('Should pass even when class has multiple values', function(){
+        var code = `
+                <p class="abc def ghi">
+            `;
+        var messages = HTMLHint.verify(code, ruleOptions);
+        expect(messages.length).to.be(0);
+    });
 });

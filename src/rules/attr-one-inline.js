@@ -16,8 +16,10 @@ HTMLHint.addRule({
                 .replace(' />', '/>')
                 .replace('< ', '<')
                 .trim()
-                .split(' ')
-                .length - 1;
+                .match(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g)
+                .length;
+
+            console.log(html, rawSpaces);
 
             var attrBreaks = html
                 .split('\n')
