@@ -1,1 +1,1 @@
-module.exports = require('./lib/htmlhint');
+module.exports = require('./lib/htmlhint-ng2');

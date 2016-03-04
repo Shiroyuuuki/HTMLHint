@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         concat: {
             htmlhint: {
                 src: ['src/core.js', 'src/reporter.js', 'src/htmlparser.js', 'src/rules/*.js'],
-                dest: 'lib/htmlhint.js'
+                dest: 'lib/htmlhint-ng2.js'
             }
         },
         exec: {
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
         replace: {
             version: {
                 files: {
-                    'lib/htmlhint.js':'lib/htmlhint.js'
+                    'lib/htmlhint-ng2.js':'lib/htmlhint-ng2.js'
                 },
                 options: {
                     prefix: '@',

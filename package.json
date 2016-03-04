@@ -1,7 +1,7 @@
 {
-  "name": "htmlhint",
-  "version": "0.9.13",
-  "description": "A Static Code Analysis Tool for HTML",
+  "name": "htmlhint-ng2",
+  "version": "0.0.2",
+  "description": "A Static Code Analysis Tool for HTML in Angular 2 Projects",
   "main": "./index",
   "dependencies": {
     "async": "1.4.2",
@@ -34,10 +34,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/yaniswang/HTMLHint.git"
+    "url": "git://github.com/nikolasleblanc/HTMLHint.git"
   },
   "bugs": {
-    "url": "https://github.com/yaniswang/HTMLHint/issues"
+    "url": "https://github.com/nikolasleblanc/HTMLHint/issues"
   },
   "keywords": [
     "html",
@@ -45,6 +45,6 @@
     "Analysis",
     "Javascript"
   ],
-  "author": "Yanis Wang",
+  "author": "Nikolas LeBlanc",
   "license": "MIT"
 }

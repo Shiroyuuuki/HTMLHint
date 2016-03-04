@@ -103,6 +103,7 @@ var HTMLParser = (function(undefined){
                             saveBlock('tagstart', match[0], matchIndex, {
                                 'tagName': tagName,
                                 'attrs': arrAttrs,
+                                'html': match[0],
                                 'close': match[6]
                             });
                             if(mapCdataTags[tagName]){
