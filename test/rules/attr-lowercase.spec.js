@@ -22,7 +22,7 @@ describe('Rules: '+ruldId, function(){
         expect(messages[0].line).to.be(1);
         expect(messages[0].col).to.be(3);
 
-        code = '<p [id]=""\r\n [TEST1]="abc" *TEST2="abc">';
+        code = '<p [id]=""\r\n (TEST1)="abc" *TEST2="abc">';
         messages = HTMLHint.verify(code, ruleOptions);
         expect(messages.length).to.be(2);
         expect(messages[0].rule.id).to.be(ruldId);
