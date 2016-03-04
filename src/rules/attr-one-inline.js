@@ -19,8 +19,6 @@ HTMLHint.addRule({
                 .match(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g)
                 .length;
 
-            console.log(html, rawSpaces);
-
             var attrBreaks = html
                 .split('\n')
                 .length - 1;
