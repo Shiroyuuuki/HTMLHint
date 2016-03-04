@@ -41,4 +41,12 @@ describe('Rules: '+ruldId, function(){
         var messages = HTMLHint.verify(code, ruleOptions);
         expect(messages.length).to.be(0);
     });
+
+    it('Should pass when there are no attributes', function(){
+        var code = `
+                <p>
+            `;
+        var messages = HTMLHint.verify(code, ruleOptions);
+        expect(messages.length).to.be(0);
+    });
 });

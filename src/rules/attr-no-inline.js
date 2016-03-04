@@ -16,14 +16,15 @@ HTMLHint.addRule({
                 .replace(' />', '/>')
                 .replace('< ', '<')
                 .trim()
-                .match(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g)
-                .length;
+                .match(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g);
+
+            var spaceCount = rawSpaces && rawSpaces.length || 0;
 
             var attrBreaks = html
                 .split('\n')
                 .length - 1;
 
-            if (rawSpaces !== 1 && rawSpaces !== attrBreaks) {
+            if (spaceCount !== 1 && spaceCount !== attrBreaks) {
                 reporter.error('No inline attributes allowed', event.line, event.col, self, event.raw);
             }
 

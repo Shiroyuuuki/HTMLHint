@@ -16,14 +16,15 @@ HTMLHint.addRule({
                 .replace(' />', '/>')
                 .replace('< ', '<')
                 .trim()
-                .match(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g)
-                .length;
+                .match(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g);
+
+            var spaceCount = rawSpaces && rawSpaces.length || 0;
 
             var attrBreaks = html
                 .split('\n')
                 .length - 1;
 
-            if (rawSpaces !== 1 && rawSpaces !== attrBreaks + 1) {
+            if (spaceCount >= 1 && spaceCount !== attrBreaks + 1) {
                 reporter.error('First attribute should be inline with parent tag',
                     event.line, event.col, self, event.raw);
             }
