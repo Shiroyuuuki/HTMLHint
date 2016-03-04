@@ -23,8 +23,8 @@ HTMLHint.addRule({
                 .split('\n')
                 .length - 1;
 
-            if (rawSpaces !== attrBreaks) {
-                reporter.warn('No inline attributes allowed', event.line, event.col, self, event.raw);
+            if (rawSpaces !== 1 && rawSpaces !== attrBreaks) {
+                reporter.error('No inline attributes allowed', event.line, event.col, self, event.raw);
             }
 
         });

@@ -23,8 +23,8 @@ HTMLHint.addRule({
                 .split('\n')
                 .length - 1;
 
-            if (rawSpaces !== attrBreaks + 1) {
-                reporter.warn('First attribute should be inline with parent tag',
+            if (rawSpaces !== 1 && rawSpaces !== attrBreaks + 1) {
+                reporter.error('First attribute should be inline with parent tag',
                     event.line, event.col, self, event.raw);
             }
 

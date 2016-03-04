@@ -33,4 +33,12 @@ describe('Rules: '+ruldId, function(){
         var messages = HTMLHint.verify(code, ruleOptions);
         expect(messages.length).to.be(0);
     });
+
+    it('Should pass when only one attribute inline', function(){
+        var code = `
+                <p TEST="abc">
+            `;
+        var messages = HTMLHint.verify(code, ruleOptions);
+        expect(messages.length).to.be(0);
+    });
 });

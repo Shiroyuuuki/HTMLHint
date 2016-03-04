@@ -1,6 +1,6 @@
 {
   "name": "htmlhint-ng2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Static Code Analysis Tool for HTML in Angular 2 Projects",
   "main": "./index",
   "dependencies": {
