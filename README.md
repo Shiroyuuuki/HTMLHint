@@ -1,31 +1,29 @@
-HTMLHint
+HTMLHint-ng2
 =======================
 
-![HTMLHint logo](https://raw.github.com/yaniswang/HTMLHint/master/logo.png)
+HTMLHint is a Static Code Analysis Tool for Angular 2 HTML templates, you can use it with IDE or in build system.
 
-HTMLHint is a Static Code Analysis Tool for HTML, you can use it with IDE or in build system.
+It extends [https://github.com/yaniswang/HTMLHint](HTMLHint) and adds support for Angular 2 attributes ie, [inputs],
+(outputs), *ngDirectives, and includes rules supporting camelCase attribute names and preventing inline attributes
+for better diff-ing.
 
-[![Build Status](https://img.shields.io/travis/yaniswang/HTMLHint.svg)](https://travis-ci.org/yaniswang/HTMLHint)
-[![Coverage Status](https://img.shields.io/coveralls/yaniswang/HTMLHint.svg)](https://coveralls.io/github/yaniswang/HTMLHint?branch=master)
-[![NPM version](https://img.shields.io/npm/v/htmlhint.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
-[![License](https://img.shields.io/npm/l/htmlhint.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
-[![NPM count](https://img.shields.io/npm/dm/htmlhint.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
-[![NPM count](https://img.shields.io/npm/dt/htmlhint.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
-
-Official Site: [http://htmlhint.com/](http://htmlhint.com/)
+[![NPM version](https://img.shields.io/npm/v/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
+[![License](https://img.shields.io/npm/l/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
+[![NPM count](https://img.shields.io/npm/dm/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
+[![NPM count](https://img.shields.io/npm/dt/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
 
 Quick start
 ======================
 
 1. install & hint
 
-        npm install htmlhint -g
-        htmlhint -V
-        htmlhint --help
-        htmlhint www
-        htmlhint www/test.html
-        htmlhint www/**/*.xhtml
-        htmlhint www/**/*.{htm,html}
+        npm install htmlhint-ng2 -g
+        htmlhint-ng2 -V
+        htmlhint-ng2 --help
+        htmlhint-ng2 www
+        htmlhint-ng2 www/test.html
+        htmlhint-ng2 www/**/*.xhtml
+        htmlhint-ng2 www/**/*.{htm,html}
 
 2. results
 
@@ -59,17 +57,10 @@ Quick start
         <head>
             ...
 
-Guide
-=======================
-
-1. [How to use](https://github.com/yaniswang/HTMLHint/wiki/Usage)
-2. [All Rules](https://github.com/yaniswang/HTMLHint/wiki/Rules)
-2. [How to Develop](https://github.com/yaniswang/HTMLHint/wiki/Developer-guide)
-
 License
 ================
 
-HTMLHint is released under the MIT license:
+HTMLHint-ng2 is released under the MIT license:
 
 > The MIT License
 >
@@ -96,6 +87,7 @@ HTMLHint is released under the MIT license:
 Thanks
 ================
 
+* HTMLhint: [https://github.com/yaniswang/HTMLHint](https://github.com/yaniswang/HTMLHint)
 * mocha: [https://github.com/visionmedia/mocha](https://github.com/visionmedia/mocha)
 * expect.js: [https://github.com/LearnBoost/expect.js](https://github.com/LearnBoost/expect.js)
 * istanbul: [https://github.com/gotwarlost/istanbul](https://github.com/gotwarlost/istanbul)
