@@ -7,10 +7,10 @@ It extends [https://github.com/yaniswang/HTMLHint](HTMLHint) and adds support fo
 (outputs), *ngDirectives, and includes rules supporting camelCase attribute names and preventing inline attributes
 for better diff-ing.
 
-[![NPM version](https://img.shields.io/npm/v/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
-[![License](https://img.shields.io/npm/l/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
-[![NPM count](https://img.shields.io/npm/dm/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
-[![NPM count](https://img.shields.io/npm/dt/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint)
+[![NPM version](https://img.shields.io/npm/v/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint-ng2)
+[![License](https://img.shields.io/npm/l/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint-ng2)
+[![NPM count](https://img.shields.io/npm/dm/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint-ng2)
+[![NPM count](https://img.shields.io/npm/dt/htmlhint-ng2.svg?style=flat)](https://www.npmjs.com/package/htmlhint-ng2)
 
 Quick start
 ======================
